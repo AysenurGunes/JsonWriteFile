@@ -1,5 +1,4 @@
 ﻿using System;
-
 using System.Text.Json;
 
 namespace JsonWriteFile
@@ -7,9 +6,10 @@ namespace JsonWriteFile
     internal class Program
     {
         // private static string[] JsonText;
+        [STAThread]
         static void Main(string[] args)
         {
-
+            
             string text = JsonFileRead("response.json");
 
             JsonFileWrite(text);
